@@ -37,4 +37,24 @@ TrelloPowerUp.initialize({
         ];
       });
   },
+
+  "card-detail-badges": function (t, options) {
+    return t
+      .get("card", "shared", "sprintNumber")
+      .then(function (sprintNumber) {
+        return [
+          {
+            title: "Sprint",
+            text: sprintNumber || "Non défini",
+            color: sprintNumber ? null : "red",
+            callback: function (t) {
+              return t.popup({
+                title: "Définir le n° du sprint",
+                url: "views/sprint-number.html",
+              });
+            },
+          },
+        ];
+      });
+  },
 });
