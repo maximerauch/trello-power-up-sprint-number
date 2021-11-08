@@ -25,6 +25,10 @@ TrelloPowerUp.initialize({
     return t
       .get("card", "shared", "sprintNumber")
       .then(function (sprintNumber) {
+        if (isNaN(parseInt(sprintNumber))) {
+          return;
+        }
+
         return [
           {
             icon: BLACK_SPRINT_ICON,
