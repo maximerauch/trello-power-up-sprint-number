@@ -20,6 +20,6 @@ t.render(function () {
       window.sprintNumber.value = sprintNumber;
     })
     .then(function () {
-      t.sizeTo("#sprint-number");
+      t.sizeTo("#sprint-number").done();
     });
 });

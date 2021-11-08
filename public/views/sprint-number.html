@@ -1,15 +1,12 @@
 <html>
   <head>
     <link rel="stylesheet" href="https://p.trellocdn.com/power-up.min.css">
-    <style>
-      select { height: 30px; }
-    </style>
+    <link rel="stylesheet" href="../styles/style.css">
     <script src="https://p.trellocdn.com/power-up.min.js"></script>
   </head>
   <body>
     <form id="sprint-number">
-      <label for="sprint-number">Sprint Number:</label>
-      <select name="sprint-number" id="sprintNumber">
+      <select name="sprintNumber" id="sprintNumber">
         <option value="">-</option>
         <option value="1">1</option>
         <option value="2">2</option>
@@ -21,7 +18,9 @@
         <option value="8">8</option>
         <option value="9">9</option>
       </select>
-      <button type="submit" class="mod-primary">Save</button>
+      <hr/>
+      <button type="submit" class="mod-gutter">Enregistrer</button>
+      <button type="button">Effacer</button>
     </form>
     <script src="./js/sprint-number.js"></script>
   </body>

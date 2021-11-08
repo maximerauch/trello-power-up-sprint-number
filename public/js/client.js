@@ -13,7 +13,7 @@ TrelloPowerUp.initialize({
         text: "Sprint Number",
         callback: function (t) {
           return t.popup({
-            title: "Sprint Number",
+            title: "Définir le n° du sprint",
             url: "views/sprint-number.html",
           });
         },
