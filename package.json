@@ -1,0 +1,23 @@
+{
+  "name": "trello-power-up-sprint-number",
+  "version": "0.0.1",
+  "description": "A Trello Power-Up",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.15.2"
+  },
+  "engines": {
+    "node": "6.10.x"
+  },
+  "repository": {
+    "url": "https://github.com/schnapse/trello-power-up-sprint-number"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "express"
+  ]
+}
