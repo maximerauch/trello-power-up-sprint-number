@@ -12,3 +12,8 @@ select {
 button {
   width:100%;
 }
+
+button.mod-secondary {
+  background-color: #0079bf;
+  color:white;
+}
