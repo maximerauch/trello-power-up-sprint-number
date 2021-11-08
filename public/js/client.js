@@ -2,11 +2,14 @@
 
 var Promise = TrelloPowerUp.Promise;
 
+var BLACK_SPRINT_ICON =
+  "https://trello-power-up-sprint-number.herokuapp.com/images/icon_sprint.png";
+
 TrelloPowerUp.initialize({
   "card-buttons": function (t, options) {
     return [
       {
-        icon: "images/icon_sprint.png",
+        icon: BLACK_SPRINT_ICON,
         text: "Sprint Number",
         callback: function (t) {
           return t.popup({
@@ -24,7 +27,7 @@ TrelloPowerUp.initialize({
       .then(function (sprintNumber) {
         return [
           {
-            icon: "images/icon_sprint.png",
+            icon: BLACK_SPRINT_ICON,
             text: sprintNumber,
           },
         ];
