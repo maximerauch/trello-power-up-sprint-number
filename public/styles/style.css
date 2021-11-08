@@ -5,12 +5,12 @@
 /* less: http://lesscss.org/ */
 
 select {
-  width:100%;
+  width:98%;
   height:30px;
 }
 
 button {
-  width:100%;
+  width:98%;
 }
 
 button.mod-secondary {
