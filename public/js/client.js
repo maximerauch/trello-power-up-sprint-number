@@ -14,7 +14,7 @@ TrelloPowerUp.initialize({
         callback: function (t) {
           return t.popup({
             title: "Sprint Number",
-            url: "sprint-number.html",
+            url: "views/sprint-number.html",
           });
         },
       },
