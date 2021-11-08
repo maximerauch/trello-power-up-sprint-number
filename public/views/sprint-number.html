@@ -5,8 +5,8 @@
     <script src="https://p.trellocdn.com/power-up.min.js"></script>
   </head>
   <body>
-    <form id="sprintNumberForm">
-      <select name="sprintNumber" id="sprintNumberSelect">
+    <form>
+      <select name="sprintNumber" id="sprintNumberField">
         <option value="">-</option>
         <option value="1">1</option>
         <option value="2">2</option>
@@ -18,9 +18,8 @@
         <option value="8">8</option>
         <option value="9">9</option>
       </select>
-      <hr/>
-      <button type="submit" class="mod-secondary">Enregistrer</button>
-      <button type="button">Effacer</button>
+      <button type="button" id="sprintNumberSave">Enregistrer</button>
+      <button type="button" id="sprintNumberReset">Effacer</button>
     </form>
     <script src="../js/sprint-number.js"></script>
   </body>
