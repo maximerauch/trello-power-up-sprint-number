@@ -45,8 +45,8 @@ TrelloPowerUp.initialize({
         return [
           {
             title: "Sprint",
-            text: sprintNumber || "Non défini",
-            color: sprintNumber ? null : "red",
+            text: sprintNumber ? ("0" + sprintNumber).slice(-2) : "Aucun",
+            color: getColorByNumber(sprintNumber),
             callback: function (t) {
               return t.popup({
                 title: "Définir le n° du sprint",
@@ -58,3 +58,44 @@ TrelloPowerUp.initialize({
       });
   },
 });
+
+function getColorByNumber(sprintNumber) {
+  if (isNaN(parseInt(sprintNumber))) {
+    sprintNumber = 0;
+  }
+
+  switch (sprintNumber) {
+    case 1:
+      return "#61bd4f";
+
+    case 2:
+      return "#f2d600";
+
+    case 3:
+      return "#ff9f1a";
+
+    case 4:
+      return "#eb5a46";
+
+    case 5:
+      return "#c377e0";
+
+    case 6:
+      return "#0079bf";
+
+    case 7:
+      return "#00c2e0";
+
+    case 8:
+      return "#51e898";
+
+    case 9:
+      return "#ff78cb";
+
+    case 10:
+      return "#344563";
+
+    default:
+      return "#091e420a";
+  }
+}

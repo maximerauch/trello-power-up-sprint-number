@@ -1,25 +1,36 @@
 <html>
   <head>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://p.trellocdn.com/power-up.min.css">
     <link rel="stylesheet" href="../styles/style.css">
     <script src="https://p.trellocdn.com/power-up.min.js"></script>
   </head>
   <body>
     <form>
-      <select name="sprintNumber" id="sprintNumberField">
-        <option value="">-</option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-        <option value="9">9</option>
-      </select>
-      <button type="button" id="sprintNumberSave" class="mod-secondary">Enregistrer</button>
-      <button type="button" id="sprintNumberReset">Effacer</button>
+      <!-- <select name="sprintNumber" id="sprintNumberField">
+        <option class="default" value="">-</option>
+        <option class="green" value="1">01</option>
+        <option class="yellow" value="2">02</option>
+        <option class="orange" value="3">03</option>
+        <option class="red" value="4">04</option>
+        <option class="purple" value="5">05</option>
+        <option class="blue" value="6">06</option>
+        <option class="sky" value="7">07</option>
+        <option class="lime" value="8">08</option>
+        <option class="pink" value="9">09</option>
+        <option class="black" value="10">10</option>
+      </select> -->
+      <button type="button" onclick="updateValue(0);" id="sprintNumber0" class="btn-default">Aucun</button>
+      <button type="button" onclick="updateValue(1);" id="sprintNumber1" class="btn-green">01</button>
+      <button type="button" onclick="updateValue(2);" id="sprintNumber2" class="btn-yellow">02</button>
+      <button type="button" onclick="updateValue(3);" id="sprintNumber3" class="btn-orange">03</button>
+      <button type="button" onclick="updateValue(4);" id="sprintNumber4" class="btn-red">04</button>
+      <button type="button" onclick="updateValue(5);" id="sprintNumber5" class="btn-purple">05</button>
+      <button type="button" onclick="updateValue(6);" id="sprintNumber6" class="btn-blue">06</button>
+      <button type="button" onclick="updateValue(7);" id="sprintNumber7" class="btn-sky">07</button>
+      <button type="button" onclick="updateValue(8);" id="sprintNumber8" class="btn-lime">08</button>
+      <button type="button" onclick="updateValue(9);" id="sprintNumber9" class="btn-pink">09</button>
+      <button type="button" onclick="updateValue(10);" id="sprintNumber10" class="btn-black">10</button>
     </form>
     <script src="../js/sprint-number.js"></script>
   </body>

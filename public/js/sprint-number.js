@@ -1,18 +1,12 @@
 var t = TrelloPowerUp.iframe();
 
-window.sprintNumberSave.addEventListener("click", function (event) {
-  event.preventDefault();
-  return updateValue(window.sprintNumberField.value);
-});
-
-window.sprintNumberReset.addEventListener("click", function (event) {
-  event.preventDefault();
-  return updateValue("");
-});
-
 t.render(function () {
   return t.get("card", "shared", "sprintNumber").then(function (sprintNumber) {
-    window.sprintNumberField.value = sprintNumber;
+    if (isNaN(parseInt(sprintNumber))) {
+      sprintNumber = 0;
+    }
+
+    window["sprintNumber" + sprintNumber].classList.add("btn-selected");
   });
 });
 
