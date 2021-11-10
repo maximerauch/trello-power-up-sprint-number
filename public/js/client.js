@@ -87,7 +87,7 @@ TrelloPowerUp.initialize({
           {
             title: "Sprint",
             text: sprintNumber ? ("0" + sprintNumber).slice(-2) : "Aucun",
-            color: getColorByNumber(sprintNumber),
+            color: "#344563",
             callback: function (t) {
               return t.popup({
                 title: "Définir le n° du sprint",
