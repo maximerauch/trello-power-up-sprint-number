@@ -9,6 +9,7 @@ button {
   font-weight:bold;
   color:white;
   position:relative;
+  margin: 0 0 4 5;
 }
 
 button:active {
