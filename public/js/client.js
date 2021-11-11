@@ -2,7 +2,11 @@
 
 var Promise = TrelloPowerUp.Promise;
 
-var BLACK_SPRINT_ICON = window.location.hostname + "/images/icon_sprint.png";
+var BLACK_SPRINT_ICON =
+  window.location.protocol +
+  "//" +
+  window.location.hostname +
+  "/images/icon_sprint.png";
 
 TrelloPowerUp.initialize({
   "card-buttons": function (t, options) {
