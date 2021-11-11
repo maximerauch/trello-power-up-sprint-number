@@ -6,25 +6,6 @@ var BLACK_SPRINT_ICON =
   "https://trello-power-up-sprint-number.herokuapp.com/images/icon_sprint.png";
 
 TrelloPowerUp.initialize({
-  "board-buttons": function (t, opts) {
-    return [
-      {
-        icon: {
-          dark: BLACK_SPRINT_ICON,
-          light: BLACK_SPRINT_ICON,
-        },
-        text: "Recherchée avancée",
-        condition: "always",
-        callback: function (t) {
-          return t.popup({
-            title: "Définir le n° du sprint",
-            url: "views/sprint-number.html",
-          });
-        },
-      },
-    ];
-  },
-
   "card-buttons": function (t, options) {
     return [
       {
