@@ -72,7 +72,7 @@ function getColorByNumber(sprintNumber) {
 
   switch (sprintNumber) {
     case 1:
-      return "red";
+      return "green";
 
     case 2:
       return "yellow";

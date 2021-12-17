@@ -1,19 +1,15 @@
 var t = TrelloPowerUp.iframe();
 
 t.render(function () {
-  return t.get("card", "shared", "sprintNumber").then(function (sprintNumber) {
+  return t.get("card", "shared", "errorType").then(function (errorType) {
     t.sizeTo("#content");
 
-    if (isNaN(parseInt(sprintNumber))) {
-      sprintNumber = 0;
-    }
-
-    window["sprintNumber" + sprintNumber].classList.add("btn-selected");
+    window["errorType" + errorType].classList.add("btn-selected");
   });
 });
 
 function updateValue(value) {
-  return t.set("card", "shared", "sprintNumber", value).then(function () {
+  return t.set("card", "shared", "errorType", value).then(function () {
     t.closePopup();
   });
 }
