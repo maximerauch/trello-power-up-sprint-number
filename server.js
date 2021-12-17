@@ -2,11 +2,9 @@ var express = require("express");
 
 var app = express();
 
-app.use(express.static("public"));
-
 app.get("/:name", function (request, response) {
   response.sendFile(
-    __dirname + "/" + request.params.name + "/views/index.html"
+    __dirname + "/power-ups/" + request.params.name + "/views/index.html"
   );
 });
 
