@@ -2,10 +2,13 @@ var express = require("express");
 
 var app = express();
 
-app.get("/:name", function (request, response) {
-  response.sendFile(
-    __dirname + "/power-ups/" + request.params.name + "/views/index.html"
-  );
+["sprint-number", "error-type"].forEach((name) => {
+  var folder = __dirname + "/power-ups/" + name;
+  app.use(express.static(folder));
+
+  app.get("/" + name, function (request, response) {
+    response.sendFile(folder + "/views/index.html");
+  });
 });
 
 var listener = app.listen(process.env.PORT, function () {
