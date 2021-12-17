@@ -3,6 +3,14 @@
         {
             "name": "root",
             "path": "."
+        },
+        {
+            "name": "sprint-number",
+            "path": "power-ups/sprint-number"
+        },
+        {
+            "name": "error-type",
+            "path": "power-ups/error-type"
         }
     ],
     "settings": {
