@@ -13,7 +13,7 @@ TrelloPowerUp.initialize({
     return [
       {
         icon: BLACK_ERROR_ICON,
-        text: "Error Type",
+        text: "Type d'erreur",
         callback: function (t) {
           return t.popup({
             title: "Définir le type d'erreur",
@@ -46,10 +46,14 @@ TrelloPowerUp.initialize({
     return t.get("card", "shared", "errorType").then(function (errorType) {
       var error = getErrorByType(errorType);
 
+      if (!error) {
+        return;
+      }
+
       return [
         {
-          title: "Error",
-          text: error.label || "Aucun",
+          title: "Type d'erreur",
+          text: error.label,
           color: error.color,
           callback: function (t) {
             return t.popup({

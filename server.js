@@ -6,7 +6,7 @@ app.use(express.static("public"));
 
 ["sprint-number", "error-type"].forEach((name) => {
   app.get("/" + name, function (request, response) {
-    console.log("Load power-up : ", name);
+    console.log("Load power-up :", name);
     response.sendFile(__dirname + "/public/views/" + name + "/index.html");
   });
 });
