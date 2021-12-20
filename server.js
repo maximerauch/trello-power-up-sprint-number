@@ -2,6 +2,8 @@ var express = require("express");
 
 var app = express();
 
+app.use(express.static("power-ups"));
+
 ["sprint-number", "error-type"].forEach((name) => {
   app.get("/" + name, function (request, response) {
     response.sendFile(__dirname + "/power-ups/" + name + "/views/index.html");
