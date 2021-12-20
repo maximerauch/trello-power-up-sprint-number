@@ -17,7 +17,7 @@ TrelloPowerUp.initialize({
         callback: function (t) {
           return t.popup({
             title: "Définir le n° du sprint",
-            url: "views/sprint-number.html",
+            url: "views/sprint-number/iframe.html",
           });
         },
       },
@@ -56,7 +56,7 @@ TrelloPowerUp.initialize({
             callback: function (t) {
               return t.popup({
                 title: "Définir le n° du sprint",
-                url: "views/sprint-number.html",
+                url: "views/sprint-number/iframe.html",
               });
             },
           },

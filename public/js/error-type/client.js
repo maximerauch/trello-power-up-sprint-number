@@ -17,7 +17,7 @@ TrelloPowerUp.initialize({
         callback: function (t) {
           return t.popup({
             title: "Définir le type d'erreur",
-            url: "views/error-type.html",
+            url: "views/error-type/iframe.html",
           });
         },
       },
@@ -54,7 +54,7 @@ TrelloPowerUp.initialize({
           callback: function (t) {
             return t.popup({
               title: "Définir le type d'erreur",
-              url: "views/error-type.html",
+              url: "views/error-type/iframe.html",
             });
           },
         },

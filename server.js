@@ -2,11 +2,12 @@ var express = require("express");
 
 var app = express();
 
-app.use(express.static("power-ups"));
+app.use(express.static("public"));
 
 ["sprint-number", "error-type"].forEach((name) => {
   app.get("/" + name, function (request, response) {
-    response.sendFile(__dirname + "/power-ups/" + name + "/views/index.html");
+    console.log("Load power-up : ", name);
+    response.sendFile(__dirname + "/public/views/" + name + "/index.html");
   });
 });
 
