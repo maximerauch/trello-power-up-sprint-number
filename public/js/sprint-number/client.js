@@ -13,7 +13,7 @@ TrelloPowerUp.initialize({
     return [
       {
         icon: BLACK_SPRINT_ICON,
-        text: "Sprint Number",
+        text: "N° de sprint",
         callback: function (t) {
           return t.popup({
             title: "Définir le n° du sprint",
